@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fabrica código="567">
+    <empleado>
+        <id>1</id>
+        <nombre>Laura</nombre>
+        <email>laura@es.es</email>
+    </empleado>
+
+    <empleado>
+        <id>2</id>
+        <nombre>Paco</nombre>
+        <email>paco@es.es</email>
+    </empleado>
+
+    <empleado>
+        <id>3</id>
+        <nombre>Sandra</nombre>
+        <email>sandra@es.es</email>
+    </empleado>
+</fabrica>
