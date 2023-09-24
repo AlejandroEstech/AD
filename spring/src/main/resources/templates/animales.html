@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+          <h1>ANIMALES</h1>
+
+          <!--  <p th:text="${depredador}"></p>  -->
+          <!-- <h2 th:text="${ave}"></h2> -->
+
+          <h2>Mi ava favorita es <span th:text="${ave}"></span></h2>
+
+        <ul th:each="depredador : ${depredadores}">
+            <li th:text="${depredador}"></li>
+        </ul>
+
+
+
+
+</html>
