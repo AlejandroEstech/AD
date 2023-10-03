@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<escuela code="3223231">
+    <estudiante>
+        <nombre>Pedro</nombre>
+        <nota>7.2</nota>
+    </estudiante>
+    <estudiante>
+        <nombre>Luisa</nombre>
+        <nota>9.4</nota>
+    </estudiante>
+    <estudiante>
+        <nombre>Pedro</nombre>
+        <nota>7.2</nota>
+    </estudiante>
+</escuela>
