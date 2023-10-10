@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <button>
+            <a th:href="@{/teacher/form}">Guardar</a>
+        </button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#ID</th>
+                    <th>Nombre</th>
+                    <th>Eamil</th>
+                    <th>Teléfono</th>
+                    <th></th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr th:each="teacher :${teachers}">
+                    <td th:text="${teacher.id}"></td>
+                    <td th:text="${teacher.nombre}"></td>
+                    <td th:text="${teacher.email}"></td>
+                    <td th:text="${teacher.telefono}"></td>
+                    <td>
+                        <a th:href="@{'/teacher/' + ${teacher.id}}">Ver</a>
+                    </td>
+                    <td>
+                        <a th:href="@{'/teacher/eliminar/' + ${teacher.id}}">Eliminar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <form th:action="@{/teacher/save}" th:object="${teacher}" method="POST">
+    <input type="text"  th:field="*{nombre}" placeholder="Nombre" autocomplete="off" /><br>
+    <input type="text"  th:field="*{email}" placeholder="Email" autocomplete="off" /><br>
+    <input type="text"  th:field="*{telefono}" placeholder="Teléfono" autocomplete="off" /><br>
+    <button type="submit">Guardar</button>
+  </form>
+
+</body>
+</html>
