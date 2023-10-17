@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Interpolación de variables y template strings -->
+
+
+    <div></div>
+
+    <p></p>
+
+    <script>
+
+        let nombre = 'Ana'
+        let email = 'ana@es.es'
+        let container = document.querySelector('div')
+        let parrafo = document.querySelector('p')
+
+        let profesor = {
+            'nombre' : 'Lucas',
+            'email' : 'lucas@es.es'
+        }
+
+        container.innerHTML = `<h1>Nombre : ${nombre} , email = ${email}</h1>`
+        parrafo.innerHTML =  `${profesor.nombre} ${profesor.email}`
+
+
+
+    </script>
+    
+</body>
+</html>

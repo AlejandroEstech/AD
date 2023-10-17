@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        const  texto = () =>{
+            console.log('qué tal!!')
+        }
+
+        const otroTexto = () =>{
+            console.log('cómo te va!!')
+        }
+
+        const mensaje = (nombre, fn, fnDos) =>{
+            console.log(nombre)
+
+            fn()
+            fnDos()
+        }
+
+        mensaje('Pedro', texto, otroTexto)
+
+        function suma(){
+            console.log('El resultado de la suma es', 5,5)
+        }
+
+       const resta = () =>{
+            console.log('El resultado de la resta es', 6,5)
+        }
+
+       const callBack = (suma,resta) =>{
+            suma()
+            resta()
+        }
+
+        callBack(suma,resta)
+    
+    </script>
+    
+</body>
+</html>
