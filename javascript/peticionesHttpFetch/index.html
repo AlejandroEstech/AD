@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1></h1>
+
+    <div></div>
+
+
+    <script>
+
+        let encabezado = document.querySelector('h1')
+        let contenedor = document.querySelector('div')
+
+     
+
+        // fetch('https://jsonplaceholder.typicode.com/todos/1')
+        //     .then(response => response.json())
+        //     .then(json => console.log(json))
+
+        // fetch('https://jsonplaceholder.typicode.com/todos/1')
+        //     .then(response => response.json())
+        //     .then(json => encabezado.innerHTML = json.completed)
+
+
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then( function(res){
+                return res.json()
+            }).then(data => {
+                 console.log(data)
+
+
+                for(let i of data){
+                    contenedor.innerHTML += i.id+' '+  i.name +' , Apellido: '+ i.username+ '<br>'
+                }
+            })
+
+
+
+    </script>
+
+    
+</body>
+</html>
